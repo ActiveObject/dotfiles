@@ -1,0 +1,26 @@
+[user]
+  name = Vasyl Pryimachuk
+  email = activeobject.ac@gmail.com
+
+[github]
+  user = ActiveObject
+
+[color]
+  ui = true
+
+[alias]
+  co = checkout
+  ci = commit
+  st = status -sb
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  lg = log --graph --pretty=format:'%Cred%h%Creset%x09%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%ae>%Creset' --abbrev-commit --date=relative
+  standup = "!git log --since yesterday --author `git config user.email` --pretty=format:'%Cred%h%Creset | %s%d'"
+  in = "!git remote update -p; git lg ..@{u}"
+  out = log @{u}..
+  rl = rev-list --pretty=format:'%Cred%h%Creset%x09%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%ae>%Creset'
+  lgb = log --graph --pretty=format:'%Cred%h%Creset%x09%C(yellow)%d%Creset %s %Cgreen(%cr) %C(cyan)<%ae>%Creset' --abbrev-commit --date=relative  --first-parent --no-merges
+
+[core]
+  pager = less -x2
+  editor = vim
