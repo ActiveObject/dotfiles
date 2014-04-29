@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+function(${1:params}) {${0:}}${2:}
+]]></content>
+	<tabTrigger>fe</tabTrigger>
+	<scope>source.js</scope>
+	<description>Function Expression</description>
+</snippet>
